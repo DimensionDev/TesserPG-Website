@@ -67,11 +67,11 @@ a.btn:hover {
 
 /* Sections */
 #header {
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 @media screen and (orientation: portrait) and (max-width: 760px) {
     #header {
-        min-height: 100vh;
+        /* min-height: 100vh; */
     }
 }
 @media screen and (min-width: 768px) {
