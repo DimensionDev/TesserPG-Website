@@ -26,7 +26,7 @@
     background-size: 100vw 510px;
 }
 .bg-grayM {
-    background: #222 linear-gradient(#262A35 40%, #1C222D 100%) scroll no-repeat;
+    background: #222 linear-gradient(#262A35 0%, #1C222D 100%) scroll no-repeat;
 }
 
 /* Colors */
