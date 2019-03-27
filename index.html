@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tessercube — OpenPGP Made Mobile</title>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/smoothscroll.js"></script>
+        <script type="text/javascript" src="./js/bootstrap/bootstrap.js"></script>
+        <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="./fonts/inconsolata.css">
+        <link rel="stylesheet" href="./css/libn.css">
+        <link rel="stylesheet" href="./css/app.css">
+    </head>
+    <body>
+        <div class="navbar-fixed bg-mashiro bs--black-micro" style="position: fixed; top: 0; left: 0; width: 100vw; height: 70px; z-index: 9999; display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <div class="" style="height: 70px; padding: 0 0;">
+                            <a class="hover-to-scale td-none d-inline-block" href="./" style="transform-origin: center;">
+                                <!-- <div class="d-inline-block" style="padding: 15px 10px 0 0;"> -->
+                                    <!-- <img class="" src="./img/maskbook-icon- -book- -blue.png" alt="Tessercube" style="height: 40px;"> -->
+                                <!-- </div> -->
+                                <img class="" src="./img/tessercube--logotype-blue.svg" alt="Tessercube" style="height: 70px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-7 col-sm-6 col-md-8 col-lg-8 col-xl-8">
+                        <div class="">
+                            <div class="navbar--optionsList">
+                                <div class="navbar--option for-btn d-block">
+                                    <a class="color-blue-light btn hover-to-scale" href="javascript:void(scroll({top: 0, left: 0, behavior: 'smooth'}))" style="
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        color: #FFF;
+                                        line-height: 40px;
+                                        background: #1C68F3;
+                                        box-shadow: rgba(0, 0, 0, 0.25) 0 2px 20px;
+                                        width: 160px;
+                                        height: 40px;
+                                    ">Download</a>
+                                </div>
+                                <div class="navbar--option d-none d-lg-block">
+                                    <a class="color-000 td-none" href="./">Documentation</a>
+                                </div>
+                                <div class="navbar--option d-none d-lg-block">
+                                    <a class="color-000 td-none" href="#community">Community</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <header class="section bg-colorful" id="header" style="background: #1C68F3 center fixed; background-image: linear-gradient(-180deg, #0B61BA 0%, #072340 75%); position: relative;"> -->
+        <!-- <header class="section bg-colorful" id="header" style="background: #1C68F3 center fixed; background-image: linear-gradient(-180deg, #007AFF 0%, #072340 75%); position: relative;"> -->
+        <header class="section bg-colorful" id="header" style="background: #1C68F3 center fixed; background-image: linear-gradient(-180deg, #1C68F3 0%, #072340 100%); position: relative;">
+            <div class="navbar-static bg-colorful" id="top" style="position: absolute; width: 100vw; z-index: 7000;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="" style="height: 70px; padding: 0 0;">
+                                <a class="td-none d-inline-block" href="./">
+                                    <img class="" src="./img/tessercube--logotype-white.svg" alt="Tessercube" style="height: 70px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-8 col-lg-8 col-xl-8">
+                            <div class="">
+                                <div class="navbar--optionsList">
+                                    <div class="navbar--option for-btn d-block d-md-none-">
+                                        <a class="color-blue-light btn" href="/" style="
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            /* color: #0A88FA; */
+                                            color: #FFF;
+                                            line-height: 40px;
+                                            background: none;
+                                            /* box-shadow: rgba(0, 0, 0, 0.04) 0 2px 20px; */
+                                            border: 1px solid #FFF;
+                                            width: 160px;
+                                            height: 40px;
+                                        ">Source Code</a>
+                                    </div>
+                                    <div class="navbar--option d-none d-lg-block">
+                                        <a class="color-FFF ts--black-subtle" href="./">Documentation</a>
+                                    </div>
+                                    <div class="navbar--option d-none d-lg-block">
+                                        <a class="color-FFF ts--black-subtle" href="#community">Community</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div style="background: rgba(255, 255, 255, 0.2); height: 1px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="" style="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-none d-lg-block" style="height: 160px;">
+                            </div>
+                            <div class="d-block d-lg-none" style="height: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row color-FFF">
+                        <!-- Logo area -->
+                        <div class="col-6 offset-3 col-lg-4 offset-lg-4">
+                            <img class="d-block" style="width: 100%; max-width: 260px; margin: 0 auto;" src="./img/tessercube-icon-white-on-blue-thinner.png" alt="">
+                            <div class="d-none d-lg-block" style="height: 60px;">
+                            </div>
+                            <div class="d-block d-lg-none" style="height: 30px;">
+                            </div>
+                        </div>
+                        <!-- Title area -->
+                        <div class="col-12">
+                            <h1 id="js-GrandTitle" class="text-center ts--black-subtle">
+                                OpenPGP Made&nbsp;Mobile
+                            </h1>
+                            <div class="d-none d-lg-block" style="height: 40px;">
+                            </div>
+                            <div class="d-block d-lg-none" style="height: 0px;">
+                            </div>
+                            <!-- <p class="h3 text-center ts- -black-subtle" style="margin: 0 0;">
+                                <span style="display: inline-block;">OpenPGP and more</span>
+                            </p> -->
+                            <div class="d-none d-lg-block" style="height: 00px;">
+                            </div>
+                            <div class="d-block d-lg-none" style="height: 20px;">
+                            </div>
+                            <div class="text-center" style="">
+                                <div class="d-block float-none fs-0">
+                                    <a class="btn d-inline-block hover-to-scale" style="
+                                        font-weight: 500;
+                                        color: #000000;
+                                        background: #FFFFFF;
+                                        box-shadow: rgba(15, 100, 255, 0.9) 0 2px 20px 2px;
+                                        width: 260px;
+                                        margin: 0 15px 20px;
+                                    " href="./">
+                                        App Store
+                                    </a>
+                                    <a class="btn d-inline-block hover-to-scale" style="
+                                        font-weight: 500;
+                                        color: #000000;
+                                        background: #FFFFFF;
+                                        box-shadow: rgba(15, 100, 255, 0.9) 0 2px 20px 2px;
+                                        width: 260px;
+                                        margin: 0 15px 20px;
+                                    " href="./">
+                                        Google Play
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block" style="height: 120px;">
+                            </div>
+                            <div class="d-block d-lg-none" style="height: 40px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="section bg-colorful bg-grayM color-FFF" id="section-1" style="padding: 80px 0 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center">Absolutely OpenPGP</h2>
+                        <h3 class="text-center">
+                            <span class="h3">Tessercube abides to official standards of <a class="color-blue-light color-hover-teal td-none" target="_blank" href="https://www.openpgp.org/about/standard/">OpenPGP</a>.</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 20px;">
+            </div>
+            <div class="container">
+                <div class="row fs-0" style="overflow-x: hidden; overflow-y: hidden;">
+                    <div class="" style="overflow-x: auto; overflow-y: hidden; white-space: nowrap;">
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/me-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/me-0.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/me-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/me-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 20px;">
+            </div>
+            <div class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <p><a class="color-blue-light color-hover-teal td-none" href="./"><strong>Audit our source code →</strong></a></p>
+                            <div style="height: 30px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg-colorful bg-grayM color-FFF" id="section-2" style="padding: 80px 0 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center">Encryption Made&nbsp;Everywhere</h2>
+                        <h3 class="text-center">
+                            <span class="h3">Use OpenPGP in any app with Tessercube keyboard.</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 20px;">
+            </div>
+            <div class="container">
+                <div class="row fs-0" style="overflow-x: hidden; overflow-y: hidden;">
+                    <div class="" style="overflow-x: auto; overflow-y: hidden; white-space: nowrap;">
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/keyboard-0.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/keyboard-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/keyboard-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/keyboard-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 20px;">
+            </div>
+            <div class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p><a class="color-blue-light color-hover-teal td-none" href="./"><strong>Tutorial with screenshots →</strong></a></p>
+                            <div style="height: 30px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg-colorful bg-grayM color-FFF" id="section-3" style="padding: 80px 0 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center">Messages Made&nbsp;Trackable</h2>
+                        <h3 class="text-center">
+                            <span class="h3">Never fail finding previous messages.</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 20px;">
+            </div>
+            <div class="container">
+                <div class="row fs-0" style="overflow-x: hidden; overflow-y: hidden;">
+                    <div class="" style="overflow-x: auto; overflow-y: hidden; white-space: nowrap;">
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/messages-0.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/messages-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/messages-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-inline-block fs-0 col-10 col-lg-3">
+                            <div class="mycard screenshot">
+                                <img src="./img/scr/messages-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 20px;">
+            </div>
+            <div class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p><a class="color-blue-light color-hover-teal td-none" href="./"><strong>Tutorial with screenshots →</strong></a></p>
+                            <div style="height: 30px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg-colorful bg-grayM" id="section-4" style="padding: 80px 0 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h2 class="text-center color-FFF">Free Cyberspace, Free&nbsp;Software</h2>
+                        <h3 class="text-center color-FFF">
+                            <span class="h3">We never try to hide our&nbsp;ideological&nbsp;agenda.</span>
+                            <span class="h3">Tessercube is a free software per the definition of Free&nbsp;Software&nbsp;Foundation.</span>
+                            <span class="h3">Made by these Comrades with Faith&nbsp;in&nbsp;Liberty and Support&nbsp;to&nbsp;Proletarian&nbsp;Rights.</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 20px;">
+            </div>
+            <div class="container">
+                <div class="row" data-repeat-no="5">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                        <script type="text/javascript">
+                        var teamMemberListItemTmpl = function (data) {
+                            return `<div class="mycard">
+                                <div class="avatar" style="background: #1C68F3;">
+                                    <!-- <img class="avatar" src="${data.img}" alt=""> -->
+                                </div>
+                                <h4>${data.name}<br>${data.title}</h4>
+                                <aside class="text-center"><code class="color-999">${data.fp.split('  ').join('<br>')}</code></aside>
+                            </div>`;
+                        };
+                        [
+                            {name:'Neruthes',title:'Product Manager',img:'https://joyneop.xyz/neruthes.png',fp:'8069 0EBD 5991 1905 0EF9  43AF 037F 2FB3 D5E2 F043'}
+                        ].map(teamMemberListItemTmpl).map(function (x) {
+                            document.write(x);
+                        });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="internal-scroll-anchor" id="tech-specs">
+        </div>
+        <div class="section bg-colorful PV-80" id="section-5" style="background: #131D26">
+            <div class="container color-FFF text-left text-lg-center">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 offset-lg-1 offset-xl-1">
+                        <h2 class="text-center">Explain Like I Am Nerd</h2>
+                        <div class="" style="height: 20px;">
+                        </div>
+                        <p class="code aside">Alice installs Tessercube.</p>
+                        <p class="code aside">Upon initialization, an <a class="color-FFF color-hover-teal" target="_blank" href="https://en.wikipedia.org/wiki/ECC">ECC</a>-256 keypair is generated automatically.</p>
+                        <p class="code aside">Alice publishes her pubkey in a post or in her bio.</p>
+                        <p class="code aside">Bob, a friend of Alice, follows the same procedure.</p>
+                        <p class="code aside">When Alice posts, the content is encrypted with a random key via <a class="color-FFF color-hover-teal" target="_blank" href="https://en.wikipedia.org/wiki/AES">AES</a>-256.</p>
+                        <p class="code aside">Alice's Tessercube encrypts the AES key with Bob's pubkey via <a class="color-FFF color-hover-teal" target="_blank" href="https://en.wikipedia.org/wiki/ECDH">ECDH</a>.</p>
+                        <p class="code aside">Alice's Tessercube sends the encrypted AES key to Bob over <a class="color-FFF color-hover-teal" target="_blank" href="https://en.wikipedia.org/wiki/Peer-to-peer">Peer to peer</a> data transfer.</p>
+                        <p class="code aside">Bob's Tessercube decrypts the message and gets the AES key.</p>
+                        <p class="code aside">Bob's Tessercube decrypts the post with the AES key for Bob. Task done.</p>
+                        <p class="code aside">For specific details, see <a class="color-FFF color-hover-teal" target="_blank" href="/">Documentation on GitHub</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section bg-colorful PV-80" data-theme="basic">
+            <style media="screen">
+            footer[data-theme="basic"] {
+                color: #FFF;
+                background: #0B1117;
+            }
+            footer[data-theme="red"] {
+                color: #FFF000;
+                background: #EE0000;
+                background: #CC0000;
+            }
+            </style>
+            <div class="container text-left text-lg-center">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 offset-lg-1 offset-xl-1">
+                        <p class="code aside">© 2019 <a class="color-inherit color-hover-teal" target="_blank" href="//dimension.im/">Dimension.im</a></p>
+                        <p class="code aside">Source code of Tessercube is available on <a class="color-inherit color-hover-teal" target="_blank" href="https://github.com/ccphq/maskbook">GitHub</a>.</p>
+                        <p class="code aside">Tessercube is a Free Software per the definition of <a class="color-inherit color-hover-teal" target="_blank" href="https://fsf.org/">Free Software Foundation</a>.</p>
+                        <p class="code aside">Some developers of Tessercube are patrons of <a class="color-inherit color-hover-teal" target="_blank" href="https://eff.org/">Electronic Frontier Foundation</a>.</p>
+                        <p class="code aside">Some developers of Tessercube are comrades of <a class="color-inherit color-hover-teal" target="_blank" href="javascript:void(0)" id="js-ClickToSwitchTheme">Cybercommunist Party</a>.</p>
+                        <p class="code aside">
+                            <a class="color-inherit color-hover-teal" target="_blank" href="mailto:info@tessercube.com">Contact</a>
+                            |
+                            <a class="color-inherit color-hover-teal td-underline" id="js-PrivacyPolicyAnchor" href="javascript:void(0);">Privacy Policy</a>
+                        </p>
+                        <p class="code aside" style="opacity: 0.15;">I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</p>
+                        <script type="text/javascript">
+                        document.querySelector('#js-PrivacyPolicyAnchor').addEventListener('click', function () {
+                            alert('We absolutely collect no information about you!');
+                        });
+                        </script>
+                        <script type="text/javascript">
+                        document.querySelector('#js-ClickToSwitchTheme').addEventListener('click', function () {
+                            if (document.querySelector('footer').getAttribute('data-theme') === 'basic') {
+                                document.querySelector('footer').setAttribute('data-theme', 'red');
+                            } else {
+                                document.querySelector('footer').setAttribute('data-theme', 'basic');
+                            }
+                        });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+        // Paralex scroll
+        // document.querySelectorAll('.bg-paralex').forEach(function (elm) {
+            // window.addEventListener('scroll', function () {
+                // elm.style.backgroundPositionY = (0 - pageYOffset * 0.382) + 'px';
+            // });
+        // });
+        </script>
+        <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            if (pageYOffset > document.querySelector('header').offsetHeight - 0) {
+                document.querySelector('.navbar-fixed').style.display = 'block';
+            } else {
+                document.querySelector('.navbar-fixed').style.display = 'none';
+            };
+        });
+        </script>
+        <script type="text/javascript">
+        // data-repeat
+        window.addEventListener('load', function () {
+            document.querySelectorAll('[data-repeat]').forEach(function (elm) {
+                var amplifier = Number(elm.getAttribute('data-repeat'));
+                var tmphtml = elm.innerHTML;
+                for (var i = 0; i < amplifier - 1; i++) {
+                    elm.innerHTML += tmphtml;
+                };
+            });
+        });
+        </script>
+        <script type="text/javascript">
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+              &&
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
+        </script>
+    </body>
+</html>
