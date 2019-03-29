@@ -70,8 +70,8 @@ a.btn:hover {
     /* min-height: 100vh; */
 }
 @media screen and (orientation: portrait) and (max-width: 760px) {
-    #header {
-        /* min-height: 100vh; */
+    body[data-path="/"] #header {
+        min-height: 40vh;
     }
 }
 @media screen and (min-width: 768px) {
