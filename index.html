@@ -49,7 +49,7 @@
 								<a class="color-000 td-none" href="/">Documentation</a>
 							</div>
 							<div class="navbar--option d-none d-lg-block">
-								<a class="color-000 td-none" href="javascript:void(scroll({top: document.querySelector('#section-804').offsetTop-69, left: 0, behavior: 'smooth'}))">Community</a>
+								<a class="color-000 td-none" href="javascript:void(scroll({top: document.querySelector('#section-1').offsetTop-70, left: 0, behavior: 'smooth'}))">Features</a>
 							</div>
 						</div>
 					</div>
@@ -94,7 +94,7 @@
 									<a class="color-FFF ts--black-subtle" href="/">Documentation</a>
 								</div>
 								<div class="navbar--option d-none d-lg-block">
-									<a class="color-FFF ts--black-subtle" href="javascript:void(scroll({top: document.querySelector('#section-804').offsetTop-69, left: 0, behavior: 'smooth'}))">Community</a>
+									<a class="color-FFF ts--black-subtle" href="javascript:void(scroll({top: document.querySelector('#section-1').offsetTop-70, left: 0, behavior: 'smooth'}))">Features</a>
 								</div>
 							</div>
 						</div>
@@ -391,7 +391,7 @@
 	</script>
 	<script type="text/javascript">
 		window.addEventListener('scroll', function() {
-			if (pageYOffset > document.querySelector('header').offsetHeight - 0) {
+			if (pageYOffset >= document.querySelector('header').offsetHeight - 70) {
 				document.querySelector('.navbar-fixed').style.display = 'block';
 			} else {
 				document.querySelector('.navbar-fixed').style.display = 'none';
@@ -409,43 +409,6 @@
 				};
 			});
 		});
-	</script>
-	<script type="text/javascript">
-		// Select all links with hashes
-		$('a[href*="#"]')
-			// Remove links that don't actually link to anything
-			.not('[href="#"]')
-			.not('[href="#0"]')
-			.click(function(event) {
-				// On-page links
-				if (
-					location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-					location.hostname == this.hostname
-				) {
-					// Figure out element to scroll to
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-					// Does a scroll target exist?
-					if (target.length) {
-						// Only prevent default if animation is actually gonna happen
-						event.preventDefault();
-						$('html, body').animate({
-							scrollTop: target.offset().top
-						}, 1000, function() {
-							// Callback after animation
-							// Must change focus!
-							var $target = $(target);
-							$target.focus();
-							if ($target.is(":focus")) { // Checking if the target was focused
-								return false;
-							} else {
-								$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-								$target.focus(); // Set focus again
-							};
-						});
-					}
-				}
-			});
 	</script>
 </body>
 
