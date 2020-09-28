@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="" style="height: 40px;">
+                <div class="" style="height: 20px;">
                 </div>
             </div>
         </header>
@@ -138,48 +138,41 @@
             <!-- <div style="height: 20px;">
             </div> -->
             <div class="container">
-                <div class="row" data-repeat-no="5">
-
-                        <script type="text/javascript">
-                        var teamMemberListItemTmpl = function (data) {
-                            return `<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
-                                <div class="mycard" style="">
-                                    <div class="avatar" style="background: none;">
-                                        <img class="avatar" src="${data[2]}" alt="">
-                                    </div>
-                                    <h4>${data[0]}<br>${data[1]}</h4>
-                                    <aside class="text-center"><code class="color-999">${data[3].split('  ').join('<br>')}</code></aside>
-                                </div>
-                            </div>`;
-                        };
-                        (
-                            `
-                            Ason Mine
-                            Office Admin
-                            /img/avatar-ason.png
-                            7FB0 0A48 C789 D4C8 B6B9  2D23 5209 A86C 8260 7660
-
-                            Neruthes
-                            Product Manager
-                            https://neruthes.xyz/neruthes-forceCircle-unpadded.png
-                            8069 0EBD 5991 1905 0EF9  43AF 037F 2FB3 D5E2 F043
-
-                            Suji Yan
-                            Chief RAmenist
-                            /img/avatar-suji.png
-                            D1DC B91E B03F EA7A F308  2C9F 9A13 11FB E7A0 BEB0
-                            `
-                        ).trim().split('\n\n').map(function (x) {
-                            return x.split('\n').map(function (y) {
-                                return y.trim();
-                            });
-                        }).map(function (x) {
-                            console.log(x);
-                            return x;
-                        }).map(teamMemberListItemTmpl).map(function (x) {
-                            document.write(x);
-                        });
-                        </script>
+                <div class="intro">
+                    <p>
+                        <a href='https://www.eff.org/cyberspace-independence'>Two score and four years ago</a> 
+                        our pioneers brought forth on this space, a new nation, conceived in Liberty, 
+                        and dedicated to the proposition that all men are created equal.
+                    </p>
+                    <p>
+                        Now we are engaged in a great civil war, 
+                        testing whether that nation, 
+                        or any nation so conceived and so dedicated, can long endure. 
+                        We are met on a great battle-field of that war. 
+                        We have come to dedicate a portion of that field, 
+                        as a final resting place for those who here gave their lives that that nation might live. 
+                        It is altogether fitting and proper that we should do this.
+                    </p>
+                    <p>
+                        But, in a larger sense, 
+                        we can not dedicate — we can not consecrate — we can not hallow — this ground. 
+                        <a href='https://archive.org/details/CypherpunksFFI/'>The brave men</a>, 
+                        <a href="https://www.theguardian.com/books/2019/sep/14/permanent-record-edward-snowden-review">living</a> 
+                        and <a href='https://archive.org/details/TheInternetsOwnBoyTheStoryOfAaronSwartz'>dead</a>, 
+                        who struggled here, have consecrated it, far above our poor power to add or detract. 
+                        The world will little note, nor long remember what we say here, 
+                        but it can never forget what they did here. 
+                        It is for us the living, rather, 
+                        to be dedicated here to <a href="https://bitcoin.org/bitcoin.pdf">the unfinished work</a> 
+                        which they who fought here have thus far so nobly advanced.
+                        It is rather for us to be here dedicated to the
+                        <a href="https://www.activism.net/cypherpunk/manifesto.html">great task</a> remaining before us
+                        — that from these honored dead we take increased devotion to 
+                        that cause for which they gave the last full measure of devotion 
+                        — that we here highly resolve that these dead shall not have died in vain — that this nation,
+                        on the Internet, shall have a new birth of freedom — and that <b>governance of the people, 
+                        by the people, for the people, shall not perish from the Cyberspace.</b>
+                    </p>                                        
                 </div>
             </div>
         </div>
